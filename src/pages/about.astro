@@ -59,4 +59,10 @@ import Layout from '../layouts/BlogPost.astro';
 		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
 		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
 	</p>
+
+	<p id="render-time">Loading...</p>
+	<script>
+	document.getElementById('render-time').textContent = 'Page rendered at: ' + new Date().toLocaleTimeString();
+	</script>
+
 </Layout>
