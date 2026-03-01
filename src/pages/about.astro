@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+const renderTime = new Date().toLocaleTimeString('en-US', { timeZone: 'UTC' });
 ---
 
 <Layout
@@ -12,9 +13,6 @@ import Layout from '../layouts/BlogPost.astro';
 		Hello world
 	</p>
 
-	<p id="render-time">Loading...</p>
-	<script>
-	document.getElementById('render-time').textContent = 'Page rendered at: ' + new Date().toLocaleTimeString();
-	</script>
+	<p id="render-time">Page rendered at: {renderTime}</p>
 
 </Layout>
